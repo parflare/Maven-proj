@@ -10,6 +10,7 @@ jobs:
     - name: Встановлення JDK
       uses: actions/setup-java@v2
       with:
+        distribution: 'openjdk'
         java-version: '11'
     - name: Збірка Maven
       run: mvn clean install
